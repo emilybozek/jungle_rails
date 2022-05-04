@@ -4,6 +4,12 @@
     <h1>My Cart</h1>
   </header>
 
+  <% if enhanced_cart.empty? %>
+
+  <h3 style="color: red;">Sorry, your cart is empty!</h3>
+
+  <% else %>
+
   <div class="panel panel-default items">
     <table class="table table-bordered">
       <thead>
@@ -15,7 +21,7 @@
         </tr>
       </thead>
       <tbody>
-        <% enhanced_cart.each do |item| %>
+        <% enhanced_cart.each do |item| %> 
           <%= render 'item', product: item[:product], quantity: item[:quantity].to_i %>
         <% end %>
       </tbody>
@@ -48,5 +54,5 @@
       <% end %>
     </div>
   </div>
-
+<% end %>
 </section>
