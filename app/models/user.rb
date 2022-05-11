@@ -14,3 +14,5 @@ class User < ApplicationRecord
       nil
     end
   end
+end
+
