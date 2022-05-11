@@ -1,9 +1,9 @@
 <tr>
   <td>
-    <%= image_tag product.image.tiny.url %>
+  <%= image_tag product.image.tiny.url %>
   </td>
   <td>
-    <h4><%= product.name %></h4>
+    <h4 style="padding: 0.4em"><%= product.name %></h4>
     <br>
     <p><%= product.description %></p>
   </td>
@@ -17,7 +17,9 @@
 
     </div>
   </td>
-  <td>
+  <td style="padding: 0.5em">
     Total <%= humanized_money_with_symbol product.price * quantity %>
   </td>
+  
+  <br>
 </tr>
