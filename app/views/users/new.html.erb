@@ -1,12 +1,8 @@
-<!-- app/views/users/new.html.erb -->
+<section class="user-registration">
+  <header class="page-header">
+    <h2>Register here:</h2>
+  </header>
 
-<h1>Sign up!</h1>
-
-<% flash.each do |type, msg| %>
-  <div class="alert alert-danger">
-    <%= msg %>
-  </div>
-<% end %>
 
 <%= form_for :user, url: '/users' , :html => {:class => "form-horizontal center"} do |f| %>
   <div class="form-group">
@@ -42,3 +38,4 @@
   <%= f.submit "Submit", class: "btn btn-default btn-primary" %>  
 
 <% end %>
+</section>
