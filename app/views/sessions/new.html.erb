@@ -1,5 +1,9 @@
-<h1>Log in</h1>
+<section class="user-login">
+<header class="page-header">
+<h2>Login</h2>
+</header>
 
+<%= render "layouts/flash" %>
 <%= form_tag '/login', :class => "form-horizontal center" do %>
 <div class="form-group">
   <%= label :email, "Email:", class: "col-md-4 control-label" %>
@@ -13,6 +17,9 @@
     <%= password_field_tag :password, params[:password], class: 'form-control'%>
   </div>
 </div>
+<div class="my-3">
 <%= submit_tag "Submit", class: "btn btn-default btn-primary" %>
-
+</div>
 <% end %>
+
+</section>

@@ -8,8 +8,9 @@ class UsersController < ApplicationController
     if user.save
       session[:user_id] = user.id
       redirect_to '/'
+      flash[:message] = "Your Account was Created Successfully!"
     else
-      redirect_to '/signup', notice: "Email exists!"
+      redirect_to '/signup'
     end
   end
 
