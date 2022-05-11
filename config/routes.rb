@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  get 'sessions/new'
   get 'about/index'
   get 'static_pages/help'
   get 'static_pages/faq'
