@@ -6,20 +6,29 @@ Rails.application.routes.draw do
   get 'static_pages/about'
   root to: 'products#index'
 
+  # products
   resources :products, only: [:index, :show]
+  # categories
   resources :categories, only: [:show]
-
+  # cart
   resource :cart, only: [:show] do
     post   :add_item
     post   :remove_item
   end
-
+  # orders
   resources :orders, only: [:create, :show]
 
+  # admin pages
   namespace :admin do
     root to: 'dashboard#show'
+    get 'categories/index'
+    resources :categories, except: [:edit, :update, :delete, :show]
     resources :products, except: [:edit, :update, :show]
   end
+
+  # registration
+  get '/signup', to: 'users#new'
+  post '/users', to: 'users#create'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
