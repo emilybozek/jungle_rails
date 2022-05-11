@@ -1,6 +1,28 @@
 
-<p>Hello admin!</p>
-<ul class="list-">
-  <li class="list-item">Number of Products: <%= @product_amount %></li>
-  <li class="list-item">Number of Categories: <%= @category_amount %></li>
-</ul>
+<header class="page-header">
+<div class="container">
+  <h2>Welcome Admin!</h2>
+</header>
+</div>
+<div class="panel panel-default">
+  <table class="table table-bordered">
+  <tbody>
+  <tr>
+        <td>
+        Products Available:
+        </td>
+        <td class="expand">
+        <%= link_to  @products_count, admin_products_path %>
+        </tr>
+
+      </td>
+      <td>
+      Categories Available:
+    </td>
+    <td>
+      <%= link_to  @categories_count, admin_categories_path %>
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>

@@ -10,10 +10,12 @@
       <p><%= @product.description %></p>
       
       <div class="quantity">
+
       <% if @product.quantity == 0 %>
       <aside class="sold-out">
-        <p>Sold Out</p>
+      <p>Sold Out</p>
       </aside>
+
       <% else %>  
         <span><%= @product.quantity %> in stock at </span>
         <% end %>  
