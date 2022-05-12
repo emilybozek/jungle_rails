@@ -4,25 +4,25 @@ A mini e-commerce application built with Rails 6.1 for purposes of teaching Rail
 
 ## Screenshots
 
-![Homepage]()
+![Homepage](https://github.com/feltfan/jungle-rails/blob/master/docs/jungle-home-page.png?raw=true)
 
-![Customer Cart]()
+![Customer Cart](https://github.com/feltfan/jungle-rails/blob/master/docs/jungle-cart.png?raw=true)
 
-![Order Confirmation Page]()
+![Order Confirmation Page](https://github.com/feltfan/jungle-rails/blob/master/docs/jungle-order.png?raw=true)
 
-![Login Page]()
+![Login Page](https://github.com/feltfan/jungle-rails/blob/master/docs/jungle-login.png?raw=true)
 
-![Registration Page]()
+![Registration Page](https://github.com/feltfan/jungle-rails/blob/master/docs/jungle-registration.png?raw=true)
 
-![Administrator Dashboard]()
+![Administrator Dashboard](https://github.com/feltfan/jungle-rails/blob/master/docs/jungle-admin-dashboard.png?raw=true)
 
-![Administrator Product Listing Controller]()
+![Administrator Product Listing Controller](https://github.com/feltfan/jungle-rails/blob/master/docs/jungle-admin-all-products.png?raw=true)
 
-![Administrator Category Listing Controller]()
+![Administrator Category Listing Controller](https://github.com/feltfan/jungle-rails/blob/master/docs/jungle-admin-cat.png?raw=true)
 
-![Client Product Listings Page]()
+![Client Product Listings Page](https://github.com/feltfan/jungle-rails/blob/master/docs/jungle-category-page.png?raw=true)
 
-![Product Listing Page]()
+![Client Product Listing Page](https://github.com/feltfan/jungle-rails/blob/master/docs/jungle-product-page.png?raw=true)
 
 ## Setup
 
