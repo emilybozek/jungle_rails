@@ -2,11 +2,6 @@ class Order < ApplicationRecord
 
 
   has_many :line_items
-
-  monetize :total_cents, numericality: true
-
-  validates :stripe_charge_id, presence: true
-
   def calc_totals
     self.total = 0
     line_items.each do |op|
@@ -15,4 +10,9 @@ class Order < ApplicationRecord
       op.item_total = op.product.price * op.qty
     end
   end
+
+  monetize :total_cents, numericality: true
+
+  validates :stripe_charge_id, presence: true
+  
 end
