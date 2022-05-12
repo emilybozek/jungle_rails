@@ -1,2 +1,30 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+
+<header class="page-header">
+<div class="container">
+  <h2>Welcome Admin!</h2>
+</header>
+<p>Close your browser if you would like to logout!</p>
+</div>
+<div class="panel panel-default">
+  <table class="table table-bordered">
+  <tbody>
+  <tr>
+        <td>
+        Products Available:
+        </td>
+        <td class="expand">
+        <%= link_to  @products_count, admin_products_path %>
+        </tr>
+
+      </td>
+      
+      <td>
+      Categories Available:
+    </td>
+    <td>
+      <%= link_to  @categories_count, admin_categories_path %>
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
