@@ -5,11 +5,16 @@ class UsersController < ApplicationController
 
   def create
     user = User.new(user_params)
+    user.errors[:first_name]
+    user.errors[:last_name]
+    user.errors[:password]
+    user.errors[:password_confirmation]
     if user.save
       session[:user_id] = user.id
       redirect_to '/'
       flash[:message] = "Your Account was Created Successfully!"
     else
+      flash[:messages] = user.errors.full_messages
       redirect_to '/signup'
     end
   end

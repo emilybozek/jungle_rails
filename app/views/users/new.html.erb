@@ -1,10 +1,16 @@
 <section class="user-registration">
   <header class="page-header">
     <h2>Register Here!</h2>
+
   </header>
-  
-  <%= render "layouts/flash" %>
-<%= form_for :user, url: '/users' , :html => {:class => "form-horizontal center"} do |f| %>
+
+  <% if flash[:messages] %>
+  <% flash[:messages].each do |message| %>
+  <h2><%= message%></h2> <br>
+  <% end %>
+  <% end %>
+
+  <%= form_for :user, url: '/users' , :html => {:class => "form-horizontal center"} do |f| %>
   <div class="form-group">
     <%= f.label :first_name, "First name:", class: "col-md-4 control-label" %>
     <div class="col-md-8">
