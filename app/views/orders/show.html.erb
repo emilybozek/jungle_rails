@@ -1,10 +1,17 @@
 <section class="orders-show">
 
   <header class="page-header">
-    <h1>Order #<%= @order.id %></h1>
-    <p>Your order details have been sent to <%= @order.email %> </p>
+  <div class="container">
+
   </header>
   <table class="table table-bordered">
+  <thead>
+  <tr>
+  <h3>Order #<%= @order.id %></h3>
+  <p>Thank you for your order!</p>
+  <p>Your order details have been sent to <%= @order.email %> </p>
+  </tr>
+</thead>
   <tbody>
   <% @order.line_items.each do |item| %>
     <%= render 'item', product: item.product, quantity: item[:quantity].to_i%>
@@ -16,15 +23,11 @@
           Grand Total:
           </th>
           <th>
-          <%= @order.total %>
+          <%= humanized_money_with_symbol @order.total %>
           </th>
         </tr>
       </tfoot>
   </table>
-
-  <div class="order-summary jumbotron">
-    <h5>Thank you for your order!</h5>
-  </div>
 
   <%= link_to "Continue Shopping", root_path, class: 'btn btn-lg btn-primary' %>
 
