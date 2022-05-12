@@ -9,6 +9,7 @@ class SessionsController < ApplicationController
       redirect_to '/'
     else
       redirect_to '/login'
+      flash[:message] = "Invalid login credentials!"
     end
   end
 
