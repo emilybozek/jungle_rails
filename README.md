@@ -14,16 +14,6 @@ A mini e-commerce application built with Rails 6.1 for purposes of teaching Rail
 
 ![Registration Page](https://github.com/feltfan/jungle-rails/blob/master/docs/jungle-registration.png?raw=true)
 
-![Administrator Dashboard](https://github.com/feltfan/jungle-rails/blob/master/docs/jungle-admin-dashboard.png?raw=true)
-
-![Administrator Product Listing Controller](https://github.com/feltfan/jungle-rails/blob/master/docs/jungle-admin-all-products.png?raw=true)
-
-![Administrator Category Listing Controller](https://github.com/feltfan/jungle-rails/blob/master/docs/jungle-admin-cat.png?raw=true)
-
-![Client Product Listings Page](https://github.com/feltfan/jungle-rails/blob/master/docs/jungle-category-page.png?raw=true)
-
-![Client Product Listing Page](https://github.com/feltfan/jungle-rails/blob/master/docs/jungle-product-page.png?raw=true)
-
 ## Setup
 
 1. Run `bundle install` to install dependencies
